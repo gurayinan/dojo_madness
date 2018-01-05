@@ -1,0 +1,39 @@
+{
+	"info": {
+		"name": "tornado",
+		"_postman_id": "2b2374cb-1dc7-eb76-998c-c69a984d5e02",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8888/send",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"routing_key\":\"key.data\",\n\t\"data_sample\":\"{\\\"test\\\":\\\"123123\\\",\\\"test2\\\":\\\"434123\\\"}\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8888/send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"send"
+					]
+				},
+				"description": "tornado test keep it"
+			},
+			"response": []
+		}
+	]
+}
